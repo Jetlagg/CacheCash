@@ -9,7 +9,7 @@ function Hero() {
       </a>
     </div>
     <div>
-      <img src="resource/backgroundone.svg" alt="Hero Graphic" className="max-w-xs h-[500px] object-cover" />
+      <img src="public/backgroundone.svg" alt="Hero Graphic" className="max-w-xs h-[500px] object-cover" />
     </div>
   </section>
   )
