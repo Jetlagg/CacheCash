@@ -1,6 +1,6 @@
 function Footer() {
   return (
-    <footer className="bg-white mt-10 py-6 text-center text-sm text-gray-500">
+    <footer className="bg-neutral-700 mt-10 py-6 text-center text-sm text-white">
       <div className="flex justify-between">
         <div className="flex justify-center gap-4">
           <p>&copy; 2025 CacheCash Corporation</p>

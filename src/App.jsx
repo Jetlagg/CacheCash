@@ -1,4 +1,3 @@
-
 import './App.css'
 
 import Header from './components/Header'
@@ -10,9 +9,14 @@ import Footer from './components/Footer'
 
 function App() {
   return (
-    <div className="bg-gray-200 font-[Prompt]">
-      <Header />
-      <Hero />
+    <div className="bg-gray-200">
+      <div className="	bg-[url('/public/bgimg.webp')] bg-cover bg-no-repeat bg-center w-full h-[700px]">
+        <Header />
+        <Hero />
+      </div>
+      {/* <div className="bg-[url('/public/iPhone')]">
+
+      </div> */}
       <section className="text-center py-16 px-4">
         <h2 className="text-2xl font-semibold text-gray-800">จุดเด่นของ CacheCash</h2>
         <div className="flex flex-wrap justify-center gap-6 mt-10">
