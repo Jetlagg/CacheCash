@@ -2,14 +2,13 @@ import Explorebutton from './Explorebutton';
 
 function Hero() {
   return (
-  <section className="flex flex-wrap justify-center items-center p-8  backdrop-blur-none  w-full h-[700px]">
-    <div className="flex flex-col  gap-[40px] text-center text-black ">
+  <section className="flex justify-center items-center w-100% h-210">
+    <div className="text-center text-black ">
+        <div className="bg-[url('/CacheCash.png')] bg-cover bg-center w-250 h-[500px]"></div>
       <div>
-        <h2 className="text-3xl font-bold">ควบคุมการเงินคุณในมือ – ปลอดภัย ทันที</h2>
-        <p>แจ้งเตือนทุกการใช้จ่าย ตรวจสอบธุรกรรมก่อนโดนโกง</p>
-      </div>
-
-      <div>
+        <h2 className="text-5xl font-semibold mt-5 mb-2">ควบคุมการเงินคุณในมือ</h2>
+        <h2 className="text-5xl font-semibold">ปลอดภัย ทันที</h2>
+        <p className="mt-5 mb-6">แจ้งเตือนทุกการใช้จ่าย ตรวจสอบธุรกรรมก่อนโดนโกง</p>
         <a href="#">
           <Explorebutton />
         </a>

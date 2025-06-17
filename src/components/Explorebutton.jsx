@@ -12,7 +12,7 @@ const Explorebutton = () => {
             <path d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z" fill="currentColor" />
           </svg>
         </span>
-        Explore All
+        ดูตัวอย่างแอป
       </button>
     </StyledWrapper>
   );
@@ -27,7 +27,7 @@ const StyledWrapper = styled.div`
     cursor: pointer;
     align-items: center;
     gap: 0.75rem;
-    background-color: var(--clr);
+    background-color: #006ACF;
     color: #fff;
     border-radius: 10rem;
     font-weight: 600;
@@ -44,7 +44,7 @@ const StyledWrapper = styled.div`
     width: 25px;
     height: 25px;
     position: relative;
-    color: var(--clr);
+    color: #006ACF;
     background-color: #fff;
     border-radius: 50%;
     display: grid;

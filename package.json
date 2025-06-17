@@ -15,8 +15,10 @@
   "dependencies": {
     "@tailwindcss/vite": "^4.1.7",
     "gh-pages": "^6.3.0",
+    "lucide-react": "^0.516.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
+    "react-scroll": "^1.9.3",
     "styled-components": "^6.1.18",
     "tailwindcss": "^4.1.7"
   },

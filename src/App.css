@@ -7,11 +7,35 @@ div{
     font-size: 17px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 
 h1{
     font-family: "Poppins", sans-serif;
-    font-size: 23px;
-    background: linear-gradient(to right, #459EB7, #32427F);
+    font-size: 25px;
+    /* background: linear-gradient(to right, #459EB7, #32427F);
     background-clip: text;   
-    -webkit-text-fill-color: transparent; 
+    -webkit-text-fill-color: transparent;  */
+}
+
+.headertext a {
+  text-decoration: none;
+  color: dimgray; 
+  position: relative;
+}
+
+.headertext a::after {
+  content: '';
+  position: absolute; 
+  bottom: 0; 
+  left: 0; 
+  width: 0;
+  height: 2px; 
+  background-color: #006ACF; 
+  transition: width 0.3s ease;
+}
+
+.headertext a:hover::after {
+  width: 100%; 
 }
