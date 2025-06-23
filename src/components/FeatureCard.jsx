@@ -10,7 +10,7 @@ function FeatureCard(){
     },
     {
       icon: <Search className="w-8 h-8 text-blue-600" />,
-      title: "ตรวจสอบข้อมูลเตราย",
+      title: "ตรวจสอบข้อมูลอันตราย",
       description: "สแกน QR / ลิงก์ก่อนโอนเงินทุกครั้ง",
       bgColor: "bg-blue-50"
     },
@@ -25,6 +25,12 @@ function FeatureCard(){
       title: "ความปลอดภัยระดับธนาคาร",
       description: "เข้ารหัสข้อมูลสำคัญ",
       bgColor: "bg-orange-50"
+    },
+    {
+      icon: <Shield className="w-8 h-8 text-orange-600" />,
+      title: "อัปโหลดสลิปหรือใบเสร็จ",
+      description: "เข้ารหัสข้อมูลสำคัญ",
+      bgColor: "bg-red-50"
     }
   ];
 
