@@ -11,7 +11,7 @@ function Solution() {
         <div className="grid grid-cols-2 gap-50 mb-16">
             
             <div >
-                <div className="bg-[url('/uploadbill.png')] bg-cover bg-center h-[550px] w-260">
+                <div className="bg-[url('/uploadbill.webp')] bg-cover bg-center h-[550px] w-260">
                 </div> 
             </div>
 
@@ -35,7 +35,7 @@ function Solution() {
             </div>
             
             <div >
-                <div className="bg-[url('/uploadbill.png')] bg-cover bg-center h-[550px] w-140">
+                <div className="bg-[url('/uploadbill.webp')] bg-cover bg-center h-[550px] w-140">
                 </div> 
             </div>
 
@@ -45,7 +45,7 @@ function Solution() {
         <div className="grid grid-cols-2 gap-20 mb-16">
             
             <div>
-                <div className="bg-[url('/uploadbill.png')] bg-cover bg-center h-[550px] w-260">
+                <div className="bg-[url('/uploadbill.webp')] bg-cover bg-center h-[550px] w-260">
                 </div> 
             </div>
 
