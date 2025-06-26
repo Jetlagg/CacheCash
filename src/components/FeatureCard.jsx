@@ -1,7 +1,13 @@
-import { ChevronDown, Shield, Bell, TrendingUp, Lock, Play, Plus, Minus, Mail, Phone, Facebook, Twitter, Instagram, Search, BarChart3, CreditCard } from 'lucide-react';
+import { Upload, FolderOutput, Bell, TrendingUp, Lock, Play, Plus, Minus, Mail, Phone, Facebook, Twitter, Instagram, Search, BarChart3, CreditCard, } from 'lucide-react';
 
 function FeatureCard(){
   const features = [
+    {
+      icon: <Upload className="w-8 h-8 text-blue-600" />,
+      title: "บันทึกรายการง่าย",
+      description: "แค่อัปโหลดรูป เราจะสแกนและบันทึกให้เลย",
+      bgColor: "bg-blue-50"
+    },
     {
       icon: <Bell className="w-8 h-8 text-yellow-600" />,
       title: "แจ้งเตือนเรียลไทม์",
@@ -9,37 +15,25 @@ function FeatureCard(){
       bgColor: "bg-yellow-50"
     },
     {
-      icon: <Search className="w-8 h-8 text-blue-600" />,
-      title: "ตรวจสอบข้อมูลอันตราย",
-      description: "สแกน QR / ลิงก์ก่อนโอนเงินทุกครั้ง",
-      bgColor: "bg-blue-50"
-    },
-    {
       icon: <BarChart3 className="w-8 h-8 text-green-600" />,
       title: "รายงานการเงิน",
-      description: "สรุปการใช้จ่ายรายวัน/รายเดือน",
+      description: "สรุปการใช้จ่ายรายวัน/รายเดือน รู้ว่าใช้ไปกับอะไรบ้าง",
       bgColor: "bg-green-50"
     },
     {
-      icon: <Shield className="w-8 h-8 text-orange-600" />,
-      title: "ความปลอดภัยระดับธนาคาร",
-      description: "เข้ารหัสข้อมูลสำคัญ",
-      bgColor: "bg-orange-50"
+      icon: <FolderOutput className="w-8 h-8 text-gray-600" />,
+      title: "สรุปงบให้เลย",
+      description: "แค่ Export PDF / Excel / ZIP พร้อมบิลทุกใบ ส่งต่อฝ่ายบัญชีได้เลย",
+      bgColor: "bg-gray-100"
     },
-    {
-      icon: <Shield className="w-8 h-8 text-orange-600" />,
-      title: "อัปโหลดสลิปหรือใบเสร็จ",
-      description: "เข้ารหัสข้อมูลสำคัญ",
-      bgColor: "bg-red-50"
-    }
   ];
 
   return (
-    <section id="features" className="py-20 bg-gray-50">
-      <div className="container mx-auto px-6">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">
-            จุดเด่นของ CacheCash
+    <section id="features" >
+      <div className="container mx-auto px-6 mb-25">
+        <div className="text-center mt-16 mb-16">
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">
+            ทำไมคุณถึงต้องใช้ CacheCash
           </h2>
         </div>
         
