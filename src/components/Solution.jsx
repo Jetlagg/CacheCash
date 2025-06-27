@@ -1,17 +1,17 @@
 function Solution() {
   return (
-    <section className="flex flex-col justify-center items-center bg-gray-100 w-100% h-530">
+    <section className="flex flex-col justify-center items-center bg-gray-100 h-420">
         <div className="text-center mb-16">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl font-bold text-gray-900">
             CacheCash ช่วยคุณยังไง
           </h2>
         </div>
 
         {/* 1 */}
-        <div className="grid grid-cols-2 gap-50 mb-16">
+        <div className="grid grid-cols-2 gap-40 mb-16">
             
             <div >
-                <div className="bg-[url('/uploadbill.webp')] bg-cover bg-center h-[550px] w-260">
+                <div className="bg-[url('/uploadbill.webp')] bg-cover bg-center h-[520px] w-75 ml-20">
                 </div> 
             </div>
 
@@ -25,8 +25,8 @@ function Solution() {
         </div>
 
         {/* 2 */}
-        <div className="grid grid-cols-2 mb-16">
-            <div className="leading-15">
+        <div className="grid grid-cols-2 gap-15 bg-white w-full mb-16">
+            <div className="leading-15 ml-55 mt-10">
                 <p className="text-blue-500">ดูงบ</p>
                 <h2 className="text-3xl">
                     รู้ว่างบเหลือเท่าไหร่
@@ -35,17 +35,17 @@ function Solution() {
             </div>
             
             <div >
-                <div className="bg-[url('/uploadbill.webp')] bg-cover bg-center h-[550px] w-140">
+                <div className="bg-[url('/dashboard.webp')] bg-cover bg-center h-[400px] w-180">
                 </div> 
             </div>
 
         </div>
 
         {/* 3 */}
-        <div className="grid grid-cols-2 gap-20 mb-16">
+        <div className="grid grid-cols-2 gap-40 ">
             
             <div>
-                <div className="bg-[url('/uploadbill.webp')] bg-cover bg-center h-[550px] w-260">
+                <div className="bg-[url('/export.webp')] bg-cover bg-center h-[370px] w-150">
                 </div> 
             </div>
 

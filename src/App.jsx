@@ -2,8 +2,9 @@ import './App.css'
 
 import Header from './components/Header'
 import Hero from './components/Hero'
-import Solution from './components/Solution'
 import FeatureCard from './components/FeatureCard'
+import Solution from './components/Solution'
+import Forwho from './components/Forwho'
 import VideoSection from './components/VideoSection'
 import FAQSection from './components/FAQSection'
 import Footer from './components/Footer'
@@ -18,6 +19,7 @@ function App() {
       <Hero />
       <FeatureCard />
       <Solution />
+      <Forwho />
   
           
 
