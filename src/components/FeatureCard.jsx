@@ -1,4 +1,4 @@
-import { Upload, FolderOutput, Bell, TrendingUp, Lock, Play, Plus, Minus, Mail, Phone, Facebook, Twitter, Instagram, Search, BarChart3, CreditCard, } from 'lucide-react';
+import { Upload, FolderOutput, Bell, ScrollText, BarChart3, } from 'lucide-react';
 
 function FeatureCard(){
   const features = [
@@ -21,20 +21,21 @@ function FeatureCard(){
       bgColor: "bg-green-50"
     },
     {
-      icon: <FolderOutput className="w-8 h-8 text-gray-600" />,
+      icon: <ScrollText className="w-8 h-8 text-gray-600" />,
       title: "สรุปงบให้เลย",
-      description: "แค่ Export PDF / Excel / ZIP พร้อมบิลทุกใบ ส่งต่อฝ่ายบัญชีได้เลย",
-      bgColor: "bg-gray-100"
+      description: "แค่ Export PDF / Excel พร้อมบิลทุกใบ ส่งต่อฝ่ายบัญชีได้เลย",
+      bgColor: "bg-white"
     },
   ];
 
   return (
     <section id="features" >
-      <div className="container mx-auto px-6 mb-25">
-        <div className="text-center mt-16 mb-16">
+      <div className="container mx-auto px-6 pt-16 pb-30">
+        <div className="text-center">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">
             ทำไมคุณถึงต้องใช้ CacheCash
           </h2>
+          <p className="text-gray-500 mb-20">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit, ullam.</p>
         </div>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">

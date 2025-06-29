@@ -17,7 +17,9 @@ function App() {
       </div>
     
       <Hero />
-      <FeatureCard />
+      <div className="bg-gray-100">
+        <FeatureCard />
+      </div>
       <Solution />
       <Forwho />
   

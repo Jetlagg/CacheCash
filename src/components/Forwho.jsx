@@ -2,114 +2,80 @@ import { User, Users, Building2 } from 'lucide-react';
 
 function Forwho() {
   return (
-    <section className="flex flex-col justify-center items-center gap-20 h-150">
-        <div>
-            <h2 className="text-3xl font-bold">CacheCash เหมาะกับใคร</h2>
-        </div>
+    <section className="flex flex-col justify-center items-center gap-20 py-12 px-4 bg-gray-100">
 
-        <div className="flex flex-row justify-center items-center gap-15">
-            {/* 1 */}
-            <div className="flex flex-col bg-blue-50 border-none rounded-4xl w-110 h-80 gap-5">
-                <div className="flex flex-row items-center gap-5 mt-5 ml-7">
-                    <div className="flex justify-center items-center bg-blue-100 border-none rounded-full w-18 h-18">
-                        <User className="w-8 h-8" />
-                    </div>
-                    <h2 className="text-xl">จัดการเงินคนเดียว</h2>
-                </div>
+      {/* หัวข้อ */}
+      <div className="flex flex-col justify-center items-center text-center">
+        <h2 className="text-3xl font-bold mb-4">CacheCash เหมาะกับใคร</h2>
+        <p className="text-gray-500">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit, ullam.
+        </p>
+      </div>
 
-                <ul className="leading-9 ml-8">
-                    <div className="flex items-center gap-3">
-                        <div className="w-5 h-5 bg-blue-500 rounded-full flex items-center justify-center mt-0.5">
-                            <div className="w-2 h-2 bg-white rounded-full"></div>
-                        </div>
-                        <li>จดเงินใน Notepad,Excel หายบ้าง ลืมบ้าง</li>
-                    </div>
+      {/* Grid */}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-7xl">
 
-                    <div className="flex items-center gap-3">
-                        <div className="w-5 h-5 bg-blue-500 rounded-full flex items-center justify-center mt-0.5">
-                            <div className="w-2 h-2 bg-white rounded-full"></div>
-                        </div>
-                        <li>เวลาใช้เงินส่วนตัว กับ เงินธุรกิจ → สับสน</li>
-                    </div>
-
-                    <div className="flex items-center gap-3">
-                        <div className="w-5 h-5 bg-blue-500 rounded-full flex items-center justify-center mt-0.5">
-                            <div className="w-2 h-2 bg-white rounded-full"></div>
-                        </div>
-                        <li>อยากเริ่มต้นแบบง่าย ไม่ต้องเรียนระบบบัญชี</li>
-                    </div>
-                </ul> 
+        {/* Card Template */}
+        {[
+          {
+            icon: <User className="text-blue-600 w-6 h-6" />,
+            title: 'จัดการเงินคนเดียว',
+            items: [
+              'บันทึกรายรับ-รายจ่ายเองง่าย ๆ',
+              'แนบบิล ถ่ายภาพสลิป แล้วระบบอ่านยอดให้',
+              'อยากเริ่มต้นแบบง่าย ไม่ต้องเรียนระบบบัญชี',
+              'เลือกได้ว่ารายการไหน "ส่วนตัว" หรือ "ธุรกิจ"',
+            ],
+          },
+          {
+            icon: <Users className="text-blue-600 w-6 h-6" />,
+            title: 'จัดการเงินแบบกลุ่ม',
+            items: [
+              'ทุกคนในกลุ่มสามารถบันทึกเงินเองในแอป',
+              'Dashboard เห็นงบแบบ Real-time',
+              'Export รายงานแบบมืออาชีพ',
+            ],
+          },
+          {
+            icon: <Building2 className="text-blue-600 w-6 h-6" />,
+            title: 'รูปแบบของบริษัท',
+            items: [
+              'ได้ไฟล์ CSV พร้อมหมวดและ VAT',
+              'บิลมี OCR + แนบไฟล์ครบ',
+              'Export Excel ส่งบัญชีได้เลย',
+            ],
+          },
+        ].map((card, index) => (
+          <div
+            key={index}
+            className={`
+              flex flex-col bg-white border border-gray-200 rounded-3xl p-6 shadow-sm
+              transition duration-300 ease-in-out transform
+              hover:-translate-y-1 hover:shadow-lg
+              active:-translate-y-0.5
+              ${index === 2 ? 'md:col-span-2 md:mx-auto lg:col-span-1 lg:mx-0' : ''}
+            `}
+          >
+            <div className="flex flex-row items-center gap-4 mb-4">
+              <div className="flex justify-center items-center bg-blue-100 rounded-full w-14 h-14">
+                {card.icon}
+              </div>
+              <h3 className="text-xl font-semibold">{card.title}</h3>
             </div>
+            <ul className="space-y-3 text-gray-700 text-base leading-relaxed ml-2">
+              {card.items.map((item, i) => (
+                <li key={i} className="flex items-start gap-2">
+                  <div className="w-3 h-3 bg-blue-500 rounded-full mt-2"></div>
+                  {item}
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
 
-            {/* 2 */}
-            <div className="flex flex-col bg-blue-50 border-none rounded-4xl w-110 h-80 gap-5">
-                <div className="flex flex-row items-center gap-5 mt-5 ml-7">
-                    <div className="flex justify-center items-center bg-blue-100 border-none rounded-full w-18 h-18">
-                        <Users className="w-8 h-8" />
-                    </div>
-                    <h2 className="text-xl">จัดการเงินแบบกลุ่ม</h2>
-                </div>
-
-                <ul className="leading-9 ml-8">
-                    <div className="flex items-center gap-3">
-                        <div className="w-5 h-5 bg-blue-500 rounded-full flex items-center justify-center mt-0.5">
-                            <div className="w-2 h-2 bg-white rounded-full"></div>
-                        </div>
-                        <li>จดเงินใน Notepad / Excel → หายบ้าง ลืมบ้าง</li>
-                    </div>
-
-                    <div className="flex items-center gap-3">
-                        <div className="w-5 h-5 bg-blue-500 rounded-full flex items-center justify-center mt-0.5">
-                            <div className="w-2 h-2 bg-white rounded-full"></div>
-                        </div>
-                        <li>เวลาใช้เงินส่วนตัว vs เงินธุรกิจ → สับสน</li>
-                    </div>
-
-                    <div className="flex items-center gap-3">
-                        <div className="w-5 h-5 bg-blue-500 rounded-full flex items-center justify-center mt-0.5">
-                            <div className="w-2 h-2 bg-white rounded-full"></div>
-                        </div>
-                        <li>อยากเริ่มต้นแบบง่าย ไม่ต้องเรียนระบบบัญชี</li>
-                    </div>
-                </ul> 
-            </div>
-
-            {/* 3 */}
-            <div className="flex flex-col bg-blue-50 border-none rounded-4xl w-110 h-80 gap-5">
-                <div className="flex flex-row items-center gap-5 mt-5 ml-7">
-                    <div className="flex justify-center items-center bg-blue-100 border-none rounded-full w-18 h-18">
-                        <Building2 className="w-8 h-8" />
-                    </div>
-                    <h2 className="text-xl">รูปแบบของบริษัท</h2>
-                </div>
-
-                <ul className="leading-9 ml-8">
-                    <div className="flex items-center gap-3">
-                        <div className="w-5 h-5 bg-blue-500 rounded-full flex items-center justify-center mt-0.5">
-                            <div className="w-2 h-2 bg-white rounded-full"></div>
-                        </div>
-                        <li>จดเงินใน Notepad / Excel → หายบ้าง ลืมบ้าง</li>
-                    </div>
-
-                    <div className="flex items-center gap-3">
-                        <div className="w-5 h-5 bg-blue-500 rounded-full flex items-center justify-center mt-0.5">
-                            <div className="w-2 h-2 bg-white rounded-full"></div>
-                        </div>
-                        <li>เวลาใช้เงินส่วนตัว vs เงินธุรกิจ → สับสน</li>
-                    </div>
-
-                    <div className="flex items-center gap-3">
-                        <div className="w-5 h-5 bg-blue-500 rounded-full flex items-center justify-center mt-0.5">
-                            <div className="w-2 h-2 bg-white rounded-full"></div>
-                        </div>
-                        <li>อยากเริ่มต้นแบบง่าย ไม่ต้องเรียนระบบบัญชี</li>
-                    </div>
-                </ul> 
-            </div>
-        </div>
-        
+      </div>
     </section>
   )
 }
 
-export default Forwho
+export default Forwho;

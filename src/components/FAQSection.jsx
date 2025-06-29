@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ChevronDown, Shield, Bell, TrendingUp, Lock, Play, Plus, Minus, Mail, Phone, Facebook, Twitter, Instagram, Search, BarChart3, CreditCard } from 'lucide-react';
+import { Plus, Minus } from 'lucide-react';
 
 function FAQSection() {
   const [openFAQ, setOpenFAQ] = useState(null);
