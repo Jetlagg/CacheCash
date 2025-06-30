@@ -2,13 +2,14 @@ import { User, Users, Building2 } from 'lucide-react';
 
 function Forwho() {
   return (
-    <section className="flex flex-col justify-center items-center gap-20 py-12 px-4 bg-gray-100">
+    <section id="forwho" className="flex flex-col justify-center items-center gap-20 py-12 px-4 bg-gray-100">
 
       {/* หัวข้อ */}
       <div className="flex flex-col justify-center items-center text-center">
-        <h2 className="text-3xl font-bold mb-4">CacheCash เหมาะกับใคร</h2>
-        <p className="text-gray-500">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit, ullam.
+        <p className="text-blue-700 text-sm font-bold mb-2">เหมาะกับทุกคน</p>
+        <h2 className="text-2xl font-semibold mb-2">CacheCash เหมาะกับใคร</h2>
+        <p className="text-gray-500 text-sm leading-relaxed">
+          ใครใช้ CacheCash แล้วชีวิตง่ายขึ้นบ้าง นี่คือสิ่งที่คุณจะได้เมื่อใช้งานเรา
         </p>
       </div>
 
@@ -60,7 +61,7 @@ function Forwho() {
               <div className="flex justify-center items-center bg-blue-100 rounded-full w-14 h-14">
                 {card.icon}
               </div>
-              <h3 className="text-xl font-semibold">{card.title}</h3>
+              <h3 className="text-lg font-semibold">{card.title}</h3>
             </div>
             <ul className="space-y-3 text-gray-700 text-base leading-relaxed ml-2">
               {card.items.map((item, i) => (

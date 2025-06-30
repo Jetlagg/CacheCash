@@ -11,17 +11,21 @@ import Footer from './components/Footer'
 
 function App() {
   return (
-    <div className="bg-gray-50">
-      <div>
-        <Header />
-      </div>
-    
+    <div className="scroll-smooth bg-gray-50 ">
+      <Header />
+
       <Hero />
+      <div className="bg-white w-full h-3"></div>
+
       <div className="bg-gray-100">
         <FeatureCard />
       </div>
+      <div className="bg-white w-full h-3"></div>
+
       <Solution />
+      <div className="bg-white w-full h-3"></div>
       <Forwho />
+      <div className="bg-white w-full h-3"></div>
   
           
 

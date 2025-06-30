@@ -10,31 +10,40 @@ function FAQSection() {
 
   const faqs = [
     {
-      question: "วิธีการดาวน์โหลดแอพ CacheCash?",
-      answer: "คุณสามารถดาวน์โหลดแอพ CacheCash ได้จาก App Store หรือ Google Play Store โดยค้นหาชื่อ 'CacheCash' หรือคลิกปุ่ม Download App บนหน้าเว็บไซต์นี้"
+      question: "CacheCash คืออะไร?",
+      answer: "CacheCash คือแอปช่วยจัดการเงินกองกลาง / งบทีม / ค่าใช้จ่ายโปรเจกต์แบบง่าย ๆ แต่มีความโปรจริงจัง ทั้งบันทึกเงินเข้า-ออก, ขอเบิกเงิน, อนุมัติ, และ Export รายงาน"
     },
     {
-      question: "การสมัครใช้งานแอพมีค่าใช้จ่ายหรือไม่?",
-      answer: "แอพ CacheCash ให้บริการฟรีสำหรับฟีเจอร์พื้นฐาน และมีแผน Premium สำหรับฟีเจอร์ขั้นสูงที่มีค่าใช้จ่ายเพียงเดือนละ 99 บาท"
+      question: "ใช้กับโปรเจกต์ประเภทไหนได้บ้าง?",
+      answer: "CacheCash เหมาะกับทุกแบบ: ค่าย, กิจกรรม, โปรดักชัน, SME, งาน CSR หรือแม้แต่โปรเจกต์ส่วนตัว"
     },
     {
-      question: "ข้อมูลส่วนตัวของฉันปลอดภัยแค่ไหน?",
-      answer: "เราใช้เทคโนโลยีการเข้ารหัสระดับธนาคาร และไม่เก็บข้อมูลบัตรเครดิตหรือรหัสผ่านธนาคารของคุณในระบบของเรา"
+      question: "ต้องมีพื้นฐานบัญชีมั้ยถึงใช้ได้?",
+      answer: "ไม่จำเป็นเลย! แอปออกแบบให้คนทั่วไปใช้งานง่ายเหมือนแอปจดรายจ่ายทั่วไป แต่ถ้าทีมคุณมีฝ่ายบัญชี ก็สามารถ Export ข้อมูลส่งต่อได้ครบถ้วน"
     },
     {
-      question: "สามารถใช้งานแอพกับธนาคารใดได้บ้าง?",
-      answer: "แอพ CacheCash รองรับการเชื่อมต่อกับธนาคารชั้นนำในประเทศไทยทุกแห่ง รวมถึง Mobile Banking และ E-Wallet ต่าง ๆ"
+      question: "ถ้าไม่อยากขออนุมัติ แค่อยากบันทึกเงินเฉย ๆ ได้ไหม?",
+      answer: "ได้เลย CacheCash รองรับทั้ง บันทึกเฉยๆ กับ เปิด flow ขออนุมัติ แล้วแต่ความเหมาะสมของแต่ละทีม"
+    },
+    {
+      question: "มีระบบอนุมัติหลายชั้นมั้ย?",
+      answer: "คุณสามารถตั้งได้ว่าจะอนุมัติ 1 ชั้น, 2 ชั้น หรือมากกว่านั้น เช่น หัวหน้าโปรเจกต์ → ผู้จัดการฝ่าย → ผู้บริหาร"
+    },
+    {
+      question: "ต้องเสียเงินไหม?",
+      answer: "CacheCash มีทั้งเวอร์ชันใช้ฟรี (Feature พื้นฐาน) และแพ็คเกจ Pro สำหรับทีมที่ต้องการ Export รายงาน, Audit Log หรือเชื่อม FlowAccount"
     }
   ];
 
   return (
-    <section className="py-20 bg-gray-50">
+    <section id="faq" className="py-20 bg-gray-50">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">
+          <p className="text-blue-700 text-sm font-bold mb-2">FAQ</p>
+          <h2 className="text-2xl font-semibold text-gray-900 mb-4">
             คำถามที่พบบ่อย
           </h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+          <p className="text-sm text-gray-500 max-w-2xl mx-auto">
             คำตอบสำหรับคำถามที่ผู้ใช้งานมักจะถามเกี่ยวกับ CacheCash
           </p>
         </div>
@@ -46,7 +55,7 @@ function FAQSection() {
                 onClick={() => toggleFAQ(index)}
                 className="w-full bg-white border border-gray-200 rounded-xl p-6 text-left hover:shadow-md transition-all duration-300 flex justify-between items-center group"
               >
-                <h3 className="text-lg font-semibold text-gray-900 group-hover:text-blue-600 transition-colors">
+                <h3 className="text-base font-medium text-gray-900 group-hover:text-blue-600 transition-colors">
                   {faq.question}
                 </h3>
                 <div className="text-blue-600 group-hover:scale-110 transition-transform">
@@ -61,7 +70,7 @@ function FAQSection() {
               >
                 {openFAQ === index && (
                   <div className="bg-white border border-gray-200 border-t-0 rounded-b-xl p-6">
-                    <p className="text-gray-600 leading-relaxed">
+                    <p className="text-sm text-gray-500 leading-relaxed">
                       {faq.answer}
                     </p>
                   </div>

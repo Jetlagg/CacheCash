@@ -29,13 +29,15 @@ function FeatureCard(){
   ];
 
   return (
-    <section id="features" >
-      <div className="container mx-auto px-6 pt-16 pb-30">
+    <section id="feature" >
+      <div className="container mx-auto px-6 pt-20 pb-30">
         <div className="text-center">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">
-            ทำไมคุณถึงต้องใช้ CacheCash
+          <p className="text-blue-700 text-sm font-bold mb-2">คุณสมบัติ</p>
+          <h2 className="text-2xl lg:text-3xl font-semibold text-gray-900 mb-2">
+            ทำไมถึงต้องใช้ CacheCash
           </h2>
-          <p className="text-gray-500 mb-20">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit, ullam.</p>
+          <p className="text-sm text-gray-500 mb-1">เพราะการจัดการเงิน ไม่ควรเป็นเรื่องยุ่งยากอีกต่อไป</p>
+          <p className="text-sm text-gray-500 mb-15">นี่คือฟีเจอร์หลักๆของเรา</p>
         </div>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
