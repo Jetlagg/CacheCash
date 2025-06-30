@@ -3,7 +3,10 @@ import styled from 'styled-components';
 const Explorebutton = () => {
   return (
     <StyledWrapper>
-      <button href="#" className="button" style={{ '--clr': '#7808d0' }}>
+      <a 
+      href="https://www.figma.com/proto/PfJ4rVLZV9h98bNsZdlQFt/CacheCash-Mobile-Application?node-id=1-2353&p=f&t=JwFafOOqylNxzb0c-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A2353&show-proto-sidebar=1" 
+      className="button" 
+      style={{ '--clr': '#7808d0' }}>
         <span className="button__icon-wrapper">
           <svg viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg" className="button__icon-svg" width={10}>
             <path d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z" fill="currentColor" />
@@ -13,7 +16,7 @@ const Explorebutton = () => {
           </svg>
         </span>
         ดูตัวอย่างแอพ
-      </button>
+      </a>
     </StyledWrapper>
   );
 }

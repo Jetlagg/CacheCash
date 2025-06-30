@@ -2,7 +2,7 @@ import Explorebutton from './Explorebutton';
 
 function Hero() {
   return (
-    <section className="
+    <section id="hero" className="
     bg-[url('/bg.webp')] bg-cover bg-center
     flex justify-center items-center
     w-full

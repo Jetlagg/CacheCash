@@ -24,8 +24,10 @@ function Header() {
     >
       <nav className="w-full">
         <div className="nav-wrapper flex justify-between items-center">
+          <a href="#hero" onClick={(e) => handleClick(e, 'hero')}>
           <h1 className="text-2xl md:text-3xl text-blue-600 font-bold">CacheCash</h1>
-          
+          </a>
+
           {/* Desktop Menu */}
           <div className="hidden md:flex gap-6 text-base menu">
             <a href="#feature" onClick={(e) => handleClick(e, 'feature')} className="hover:text-blue-600 transition-colors">คุณสมบัติ</a>
