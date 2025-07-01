@@ -29,15 +29,21 @@ function FeatureCard(){
   ];
 
   return (
-    <section id="feature">
+    <section id="feature" className="lg:h-155">
       <div className="container mx-auto px-6 pt-20 pb-30">
         <div className="text-center">
           <p className="text-blue-700 text-sm lg:text-lg font-bold  lg:font-semibold mb-2 lg:mb-4">คุณสมบัติ</p>
           <h2 className="text-2xl lg:text-3xl font-semibold text-gray-900 mb-2 lg:mb-4">
             ทำไมถึงต้องใช้ CacheCash
           </h2>
-          <p className="text-sm lg:text-lg lg:font-normal text-gray-600">เพราะการจัดการเงิน ไม่ควรเป็นเรื่องยุ่งยากอีกต่อไป</p>
-          <p className="text-sm lg:text-lg lg:font-normal text-gray-600 mb-15 lg:mb-17">นี่คือฟีเจอร์หลักๆของเรา</p>
+
+          {/* Mobile */}
+          <p className="block md:hidden text-sm  text-gray-600">เพราะการจัดการเงิน ไม่ควรเป็นเรื่องยุ่งยากอีกต่อไป</p>
+          <p className="block md:hidden text-sm  text-gray-600 mb-15">นี่คือฟีเจอร์หลักๆของเรา</p>
+
+          {/* Ipad Dasktop */}
+          <p className="hidden lg:flex justify-center items-center text-sm lg:text-lg lg:font-normal text-gray-600 mb-20">เพราะการจัดการเงิน ไม่ควรเป็นเรื่องยุ่งยากอีกต่อไป นี่คือฟีเจอร์หลักๆของเรา</p>
+
         </div>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">

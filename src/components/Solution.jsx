@@ -1,18 +1,18 @@
 function Solution() {
   return (
-    <section id="solution" className="flex flex-col justify-center items-center bg-gray-50 h-450 lg:h-390 xl:h-490">
+    <section id="solution" className="flex flex-col justify-center items-center bg-gray-50 h-440 lg:h-375 xl:h-470">
         
         <div className="text-center mb-10 lg:mb-25 lg:mt-20 px-4 max-w-3xl mx-auto">
             <p className="text-blue-700 text-sm font-bold mb-2 lg:text-lg lg:font-semibold">วิธีใช้</p>
-            <h2 className="text-2xl md:text-3xl lg:text-3xl lg:mb-4 font-semibold text-gray-900 mb-2">
-                การใช้งานแอป
+            <h2 className="text-2xl md:text-3xl lg:text-3xl font-semibold text-gray-900">
+                ขั้นตอนการใช้งานแอป
             </h2>
-            <p className="text-gray-600 text-sm lg:text-lg lg:font-normal">
+            {/* <p className="text-gray-600 text-sm lg:text-lg lg:font-normal">
                 ไม่ต้องคุยวนใน LINE หรือ Excel อีกต่อไป
             </p>
             <p className="text-gray-600 text-sm lg:text-lg lg:font-normal mb-5">
                 เราช่วยให้คุณบันทึก จัดการ และสรุปงบ ได้ง่ายสุดๆ
-            </p>
+            </p> */}
         </div>
 
         <div className="space-y-16 w-full">
@@ -22,7 +22,7 @@ function Solution() {
                 <div className="block md:hidden border-t border-gray-300">
                     
                     <div className="flex flex-col justify-center items-center mt-10 mb-10 px-2">
-                        <p className="text-blue-500 text-sm font-medium mb-2">สแกนบิล</p>
+                        <p className="text-blue-500 text-sm font-medium mb-2">อัปโหลดบิล</p>
                         <h3 className="text-lg font-medium text-gray-900 mb-4">
                             สแกนบิลให้เลย เพียงแค่อัปโหลดรูปภาพ
                         </h3>
@@ -45,7 +45,7 @@ function Solution() {
                 <div className="hidden md:block lg:hidden">
                     <div className="grid grid-cols-1 gap-8 items-center">
                         <div className="text-center">
-                            <p className="text-blue-500 font-semibold text-lg mb-2">สแกนบิล</p>
+                            <p className="text-blue-500 font-semibold text-lg mb-2">อัปโหลดบิล</p>
                             <h3 className="text-2xl font-bold text-gray-900 leading-tight mb-4">
                                 สแกนบิลให้เลย เพียงแค่อัปโหลดรูปภาพ
                             </h3>
@@ -65,7 +65,7 @@ function Solution() {
                         <div className="bg-[url('/uploadbill.webp')] bg-cover bg-center h-[350px] lg:h-[400px] w-80 ml-15 rounded-4xl shadow-lg"></div>
                         
                         <div className="space-y-4">
-                            <p className="text-blue-500 font-semibold text-m">สแกนบิล</p>
+                            <p className="text-blue-500 font-semibold text-m">อัปโหลดบิล</p>
                             <h3 className="text-2xl font-semibold text-gray-900 leading-tight">
                                 สแกนบิลให้เลย เพียงแค่อัปโหลดรูปภาพ
                             </h3>
@@ -81,7 +81,7 @@ function Solution() {
                     <div className="bg-[url('/uploadbill.webp')] bg-cover bg-center h-[550px] w-100 rounded-4xl shadow-xl ml-25"></div>
                     
                     <div className="space-y-6">
-                        <p className="text-blue-500 font-semibold text-lg">สแกนบิล</p>
+                        <p className="text-blue-500 font-semibold text-lg">อัปโหลดบิล</p>
                         <h3 className="text-3xl font-semibold text-gray-900 leading-tight">
                             สแกนบิลให้เลย เพียงแค่อัปโหลดรูปภาพ
                         </h3>
@@ -95,9 +95,9 @@ function Solution() {
             {/* ===== Section 2: ดูงบ ===== */}
             <div className="bg-white w-full">
                 {/* Mobile Layout */}
-                <div className="block md:hidden ">
+                <div className="block md:hidden">
                     
-                    <div className="flex flex-col justify-center items-center pt-7 mb-8 px-2">
+                    <div className="flex flex-col justify-center items-center pt-10 mb-8 px-2">
                         <p className="text-blue-500 text-sm font-medium mb-2">ดูงบ</p>
                         <h3 className="text-lg font-medium text-gray-900 mb-4">
                             รู้ว่างบเหลือเท่าไหร่
@@ -113,7 +113,7 @@ function Solution() {
                         </p>
                     </div>
                     
-                    <div className="flex flex-col justify-center items-center pb-10">
+                    <div className="flex flex-col justify-center items-center pb-20">
                         <div className="bg-[url('/dashboard.webp')] bg-cover bg-center h-[180px] w-80 rounded-xl shadow-lg"></div>
                     </div>
                 </div>
@@ -172,7 +172,7 @@ function Solution() {
             {/* ===== Section 3: Export ===== */}
             <div className="w-full">
                 {/* Mobile Layout */}
-                <div className="block md:hidden  md:items-center">
+                <div className="block md:hidden  md:items-center mb-15">
                     
                     <div className="flex flex-col justify-center items-center mb-8 px-2">
                         <p className="text-blue-500 text-sm font-medium mb-2">Export</p>
@@ -218,7 +218,7 @@ function Solution() {
 
                 {/* ipad Layout */}
                 <div className="hidden lg:grid xl:hidden">
-                    <div className="flex flex-row justify-center gap-20 pb-20">
+                    <div className="flex flex-row justify-center gap-20 pb-30">
                         <div className="bg-[url('/export.webp')] bg-gray-100 bg-cover bg-center h-75 w-130 ml-10 mt-10 rounded-4xl shadow-lg"></div>
 
                         

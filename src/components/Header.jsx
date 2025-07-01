@@ -4,19 +4,26 @@ import { Menu, X } from 'lucide-react';
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [menuAnimation, setMenuAnimation] = useState(false);
 
   const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
+    if (!isMenuOpen) {
+      setIsMenuOpen(true);
+      setTimeout(() => setMenuAnimation(true), 10);  // ดีเลย์นิดนึงเพื่อให้ Tailwind จับ transition
+    } else {
+      setMenuAnimation(false);
+      setTimeout(() => setIsMenuOpen(false), 300);   // ปิดเมนูหลังอนิเมชั่นจบ
+    }
   };
 
   const handleClick = (e, id) => {
-  e.preventDefault();
-  const target = document.getElementById(id);
-  if (target) {
-    target.scrollIntoView({ behavior: 'smooth' });
-  }
-  setIsMenuOpen(false);  
-  };
+    e.preventDefault();
+    const target = document.getElementById(id);
+    if (target) {
+      target.scrollIntoView({ behavior: 'smooth' });
+    }
+    setIsMenuOpen(false);  
+    };
 
   return (
     <header 
@@ -59,38 +66,17 @@ function Header() {
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="md:hidden mt-4 py-4 border-t border-gray-200 bg-white menu">
-            <div className="flex flex-col space-y-3">
-              {/* <a 
-                href="#feature" onClick={(e) => handleClick(e, 'feature')} 
-                className="px-4 py-2 text-base hover:bg-gray-50 hover:text-blue-600 transition-colors rounded-md"
-              >
-                คุณสมบัติ
-              </a> */}
-              <a 
-                href="#solution" onClick={(e) => handleClick(e, 'solution')} 
-                className="px-4 py-2 text-base hover:bg-gray-50 hover:text-blue-600 transition-colors rounded-md"
-              >
-                แนะนำการใช้งาน
-              </a>
-              <a 
-                href="#forwho" onClick={(e) => handleClick(e, 'forwho')} 
-                className="px-4 py-2 text-base hover:bg-gray-50 hover:text-blue-600 transition-colors rounded-md"
-              >
-                เหมาะกับใคร
-              </a>
-              <a 
-                href="#faq" onClick={(e) => handleClick(e, 'faq')} 
-                className="px-4 py-2 text-base hover:bg-gray-50 hover:text-blue-600 transition-colors rounded-md"
-              >
-                คำถามที่พบบ่อย
-              </a>
-              <a 
-                href="#about" onClick={(e) => handleClick(e, 'about')} 
-                className="px-4 py-2 text-base hover:bg-gray-50 hover:text-blue-600 transition-colors rounded-md"
-              >
-                ติดต่อเรา
-              </a>
+          <div
+            className={`
+              overflow-hidden transition-all duration-300 ease-in-out
+              ${menuAnimation ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"}
+            `}
+          >
+            <div className="flex flex-col space-y-3 py-4 border-t border-gray-200 bg-white menu px-4">
+              <a href="#solution" onClick={(e) => handleClick(e, 'solution')} className="py-2 hover:text-blue-600">แนะนำการใช้งาน</a>
+              <a href="#forwho" onClick={(e) => handleClick(e, 'forwho')} className="py-2 hover:text-blue-600">เหมาะกับใคร</a>
+              <a href="#faq" onClick={(e) => handleClick(e, 'faq')} className="py-2 hover:text-blue-600">คำถามที่พบบ่อย</a>
+              <a href="#about" onClick={(e) => handleClick(e, 'about')} className="py-2 hover:text-blue-600">ติดต่อเรา</a>
             </div>
           </div>
         )}

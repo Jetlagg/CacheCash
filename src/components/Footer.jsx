@@ -4,7 +4,7 @@ import Iconapp from './Iconapp';
 function Footer() {
   return (
     <footer id="about" className="py-16 bg-gray-800 border-t border-gray-200">
-      <div className="container mx-auto px-6">
+      <div className="container mx-auto px-6 lg:px-15 xl:px-0">
         <div className="grid md:grid-cols-4 gap-12">
           {/* Company Info */}
           <div className="md:col-span-2 ml-2">
@@ -12,7 +12,7 @@ function Footer() {
               CacheCash
             </div>
             <p className="text-white text-base mb-6 leading-relaxed">
-              แอพจัดการเงินสดที่ช่วยให้คุณควบคุมการเงินได้อย่างง่ายดายและปลอดภัย พร้อมฟีเจอร์บันทึกธุรกรรมของคุณได้ทั้งแบบเดี่ยว และแบบกลุ่ม
+              แอปจัดการเงินสดที่ช่วยให้คุณควบคุมการเงินได้อย่างง่ายดายและปลอดภัย พร้อมฟีเจอร์บันทึกธุรกรรมของคุณได้ทั้งแบบเดี่ยว และแบบกลุ่ม
             </p>
             {/* <div className="flex space-x-4">
               <a href="#" className="w-10 h-10 bg-blue-100 hover:bg-blue-200 rounded-full flex items-center justify-center transition-colors">
@@ -29,8 +29,8 @@ function Footer() {
           
           {/* Quick Links */}
           <div>
-            <h4 className="text-lg font-semibold text-white mb-5 ml-2">ลิงก์ด่วน</h4>
-            <div className="space-y-4 ml-2">
+            <h4 className="text-lg font-semibold text-white mb-5 ml-2 xl:ml-5">ลิงก์ด่วน</h4>
+            <div className="space-y-4 ml-2 xl:ml-5">
               {['การสนับสนุน', 'นโยบายความเป็นส่วนตัว', 'เงื่อนไขการใช้งาน'].map((link) => (
                 <a key={link} href="#" className="block text-white text-base font-semibold hover:text-blue-600 transition-colors">
                   {link}

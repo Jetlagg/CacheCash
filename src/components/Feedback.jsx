@@ -2,10 +2,10 @@ import Commentbutton from './Commentbutton';
 
 function Feedback() {
   return (
-    <section className="flex justify-center items-center bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 w-full h-125 lg:h-125">
+    <section className="flex justify-center items-center bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 w-full h-135 lg:h-145 xl:h-155">
         <div className="flex flex-col justify-center items-center">
-            <p className="text-blue-700 text-sm lg:text-lg font-bold  lg:font-semibold mb-2 lg:mb-2 mt-10 lg:mt-12">Feedback</p>
-            <h2 className="text-2xl lg:text-3xl font-semibold text-gray-900 mb-2 lg:mb-4">
+            <p className="text-blue-700 text-sm lg:text-lg font-bold  lg:font-semibold mb-2 lg:mb-2 mt-10">Feedback</p>
+            <h2 className="text-2xl lg:text-3xl font-semibold text-gray-900 mb-4">
                 ช่วยเราทำให้ CacheCash ดียิ่งขึ้น
             </h2>
 
@@ -13,19 +13,19 @@ function Feedback() {
             <p className="block md:hidden text-sm lg:text-lg lg:font-normal text-gray-600 max-w-sm lg:max-w-7xl text-center leading-relaxed">
                 เรากำลังพัฒนา CacheCash ให้ตอบโจทย์ทุกคนมากขึ้น 
             </p>
-            <p className="block md:hidden text-sm lg:text-lg lg:font-normal text-gray-600 mb-15 lg:mb-17 max-w-sm lg:max-w-7xl text-center leading-relaxed">
+            <p className="block md:hidden text-sm lg:text-lg lg:font-normal text-gray-600 mb-15 max-w-sm lg:max-w-7xl text-center leading-relaxed">
                 ถ้าคุณมีฟีดแบคหรือไอเดียดี ๆ บอกเราได้เลย!
             </p>
 
             {/* ipad dasktop */}
-            <p className="hidden lg:flex text-sm lg:text-lg lg:font-normal text-gray-600 mb-15 lg:mb-17 max-w-sm lg:max-w-7xl text-center leading-relaxed">
+            <p className="hidden lg:flex text-sm lg:text-lg lg:font-normal text-gray-600 mb-25 max-w-sm lg:max-w-7xl text-center leading-relaxed">
                 เรากำลังพัฒนา CacheCash ให้ตอบโจทย์ทุกคนมากขึ้น ถ้าคุณมีฟีดแบคหรือไอเดียดี ๆ บอกเราได้เลย!
             </p>
 
             <a href="#" className="mb-7">
                 <Commentbutton />
             </a>
-            <div className="flex justify-center space-x-4 opacity-30 mb-10">
+            <div className="flex justify-center space-x-4 opacity-30 mb-20 lg:mb-25">
                 <div className="w-2 h-2 bg-blue-400 rounded-full animate-bounce"></div>
                 <div className="w-2 h-2 bg-purple-400 rounded-full animate-bounce" style={{animationDelay: '0.1s'}}></div>
                 <div className="w-2 h-2 bg-pink-400 rounded-full animate-bounce" style={{animationDelay: '0.2s'}}></div>
