@@ -1,6 +1,6 @@
 function Solution() {
   return (
-    <section id="solution" className="flex flex-col justify-center items-center bg-gray-50 h-440 lg:h-375 xl:h-470">
+    <section id="solution" className="flex flex-col justify-center items-center bg-gray-50 h-460 lg:h-375 xl:h-470">
         
         <div className="text-center mb-10 lg:mb-25 lg:mt-20 px-4 max-w-3xl mx-auto">
             <p className="text-blue-700 text-sm font-bold mb-2 lg:text-lg lg:font-semibold">วิธีใช้</p>
@@ -172,7 +172,7 @@ function Solution() {
             {/* ===== Section 3: Export ===== */}
             <div className="w-full">
                 {/* Mobile Layout */}
-                <div className="block md:hidden  md:items-center mb-15">
+                <div className="block md:hidden  md:items-center mb-5">
                     
                     <div className="flex flex-col justify-center items-center mb-8 px-2">
                         <p className="text-blue-500 text-sm font-medium mb-2">Export</p>
