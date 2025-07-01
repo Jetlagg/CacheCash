@@ -15,17 +15,17 @@ function App() {
       <Header />
 
       <Hero />
-      <div className="bg-white w-full h-4"></div>
+      <div className="bg-white w-full h-4 lg:h-5"></div>
 
       
       <FeatureCard />
       
-      <div className="bg-white w-full h-4"></div>
+      <div className="bg-white w-full h-4 lg:h-5"></div>
 
       <Solution />
-      <div className="bg-white w-full h-4"></div>
+      <div className="bg-white w-full h-4 lg:h-5"></div>
       <Forwho />
-      <div className="bg-white w-full h-4"></div>
+      <div className="bg-white w-full h-4 lg:h-5"></div>
   
           
 

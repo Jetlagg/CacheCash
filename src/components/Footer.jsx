@@ -1,4 +1,5 @@
 import { ChevronDown, Shield, Bell, TrendingUp, Lock, Play, Plus, Minus, Mail, Phone, Facebook, Twitter, Instagram, Search, BarChart3, CreditCard } from 'lucide-react';
+import Iconapp from './Iconapp';
 
 function Footer() {
   return (
@@ -6,7 +7,7 @@ function Footer() {
       <div className="container mx-auto px-6">
         <div className="grid md:grid-cols-4 gap-12">
           {/* Company Info */}
-          <div className="md:col-span-2">
+          <div className="md:col-span-2 ml-2">
             <div className="text-3xl font-bold text-blue-500 mb-4">
               CacheCash
             </div>
@@ -28,8 +29,8 @@ function Footer() {
           
           {/* Quick Links */}
           <div>
-            <h4 className="text-lg font-semibold text-white mb-6">ลิงก์ด่วน</h4>
-            <div className="space-y-4">
+            <h4 className="text-lg font-semibold text-white mb-5 ml-2">ลิงก์ด่วน</h4>
+            <div className="space-y-4 ml-2">
               {['การสนับสนุน', 'นโยบายความเป็นส่วนตัว', 'เงื่อนไขการใช้งาน'].map((link) => (
                 <a key={link} href="#" className="block text-white text-base font-semibold hover:text-blue-600 transition-colors">
                   {link}
@@ -40,15 +41,17 @@ function Footer() {
           
           {/* Contact Info */}
           <div>
-            <h4 className="text-lg font-semibold text-white mb-6">ติดต่อเรา</h4>
+            <h4 className="text-lg font-semibold text-white mb-4 ml-2">ติดต่อเรา</h4>
             <div className="space-y-4">
-              <a href="mailto:support@cachecash.com" className="flex items-center gap-3 text-white text-base hover:text-blue-600 transition-colors">
+              < Iconapp/>
+              
+              <a href="mailto:cachecash.team@gmail.com" className="flex items-center gap-3 text-white text-base hover:text-blue-600 transition-colors ml-2">
                 <Mail className="w-5 h-5" />
-                support@cachecash.com
+                cachecash.team@gmail.com
               </a>
-              <a href="tel:02-xxx-xxxx" className="flex items-center gap-3 text-white text-base hover:text-blue-600 transition-colors">
+              <a href="tel:0621619626" className="flex items-center gap-3 text-white text-base hover:text-blue-600 transition-colors ml-2">
                 <Phone className="w-5 h-5" />
-                02-XXX-XXXX
+                0621619626
               </a>
             </div>
           </div>

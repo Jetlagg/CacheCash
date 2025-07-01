@@ -25,16 +25,20 @@ function Header() {
       <nav className="w-full">
         <div className="nav-wrapper flex justify-between items-center">
           <a href="#hero" onClick={(e) => handleClick(e, 'hero')}>
-          <h1 className="text-2xl md:text-3xl text-blue-600 font-bold">CacheCash</h1>
+          <h1 className="
+          text-2xl md:text-3xl 
+          lg:ml-2
+          xl:text-3xl xl:ml-5
+           text-blue-600 font-bold">CacheCash</h1>
           </a>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex gap-6 text-base menu">
+          <div className="hidden md:flex gap-6 text-base menu lg:mr-1 xl:mr-3">
             {/* <a href="#feature" onClick={(e) => handleClick(e, 'feature')} className="hover:text-blue-600 transition-colors">คุณสมบัติ</a> */}
-            <a href="#solution" onClick={(e) => handleClick(e, 'solution')} className="hover:text-blue-600 transition-colors">แนะนำการใช้งาน</a>
-            <a href="#forwho" onClick={(e) => handleClick(e, 'forwho')} className="hover:text-blue-600 transition-colors">เหมาะกับใคร</a>
-            <a href="#faq" onClick={(e) => handleClick(e, 'faq')} className="hover:text-blue-600 transition-colors">คำถามที่พบบ่อย</a>
-            <a href="#about" onClick={(e) => handleClick(e, 'about')} className="hover:text-blue-600 transition-colors">ติดต่อเรา</a>
+            <a href="#solution" onClick={(e) => handleClick(e, 'solution')} className="lg:text-base lg:text-gray-800 hover:text-blue-600 transition-colors">แนะนำการใช้งาน</a>
+            <a href="#forwho" onClick={(e) => handleClick(e, 'forwho')} className="lg:text-base lg:text-gray-800 hover:text-blue-600 transition-colors">เหมาะกับใคร</a>
+            <a href="#faq" onClick={(e) => handleClick(e, 'faq')} className="lg:text-base lg:text-gray-800 hover:text-blue-600 transition-colors">คำถามที่พบบ่อย</a>
+            <a href="#about" onClick={(e) => handleClick(e, 'about')} className="lg:text-base lg:text-gray-800 hover:text-blue-600 transition-colors">ติดต่อเรา</a>
           </div>
 
           {/* Mobile Hamburger Menu */}

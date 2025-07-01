@@ -39,11 +39,11 @@ function FAQSection() {
     <section id="faq" className="py-20 bg-gray-50">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <p className="text-blue-700 text-sm font-bold mb-2">FAQ</p>
-          <h2 className="text-2xl font-semibold text-gray-900 mb-4">
+          <p className="text-blue-700 text-sm font-bold lg:text-lg lg:font-semibold mb-2">FAQ</p>
+          <h2 className="text-2xl lg:text-3xl font-semibold text-gray-900 mb-4">
             คำถามที่พบบ่อย
           </h2>
-          <p className="text-sm text-gray-500 max-w-2xl mx-auto">
+          <p className="text-sm text-gray-600 lg:text-lg lg:font-normal max-w-2xl mx-auto">
             คำตอบสำหรับคำถามที่ผู้ใช้งานมักจะถามเกี่ยวกับ CacheCash
           </p>
         </div>
@@ -55,7 +55,7 @@ function FAQSection() {
                 onClick={() => toggleFAQ(index)}
                 className="w-full bg-white border border-gray-200 rounded-xl p-6 text-left hover:shadow-md transition-all duration-300 flex justify-between items-center group"
               >
-                <h3 className="text-base font-medium text-gray-900 group-hover:text-blue-600 transition-colors">
+                <h3 className="text-base lg:text-lg font-medium text-gray-900 group-hover:text-blue-600 transition-colors">
                   {faq.question}
                 </h3>
                 <div className="text-blue-600 group-hover:scale-110 transition-transform">
@@ -70,7 +70,7 @@ function FAQSection() {
               >
                 {openFAQ === index && (
                   <div className="bg-white border border-gray-200 border-t-0 rounded-b-xl p-6">
-                    <p className="text-sm text-gray-500 leading-relaxed">
+                    <p className="text-sm lg:text-base text-gray-500 leading-relaxed">
                       {faq.answer}
                     </p>
                   </div>
