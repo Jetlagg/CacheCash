@@ -8,7 +8,7 @@ function Solution() {
                 วิธีใช้งานแอป
             </h2>
             <p className="text-gray-500 text-sm md:text-lg mb-1">
-                ไม่ต้องเดา ไม่ต้องคุยวนใน LINE หรือ Excel อีกต่อไป
+                ไม่ต้องคุยวนใน LINE หรือ Excel อีกต่อไป
             </p>
             <p className="text-gray-500 text-sm md:text-lg mb-5">
                 เราช่วยให้คุณบันทึก จัดการ และสรุปงบ ได้ง่ายสุดๆ

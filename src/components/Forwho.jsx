@@ -2,10 +2,10 @@ import { User, Users, Building2 } from 'lucide-react';
 
 function Forwho() {
   return (
-    <section id="forwho" className="flex flex-col justify-center items-center gap-20 py-12 px-4 bg-gray-100">
+    <section id="forwho" className="flex flex-col justify-center items-center gap-20 py-12 px-4 bg-gray-100 h-290">
 
       {/* หัวข้อ */}
-      <div className="flex flex-col justify-center items-center text-center">
+      <div className="flex flex-col justify-center items-center text-center ">
         <p className="text-blue-700 text-sm font-bold mb-2">เหมาะกับทุกคน</p>
         <h2 className="text-2xl font-semibold mb-2">CacheCash เหมาะกับใคร</h2>
         <p className="text-gray-500 text-sm leading-relaxed">
@@ -14,7 +14,7 @@ function Forwho() {
       </div>
 
       {/* Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-7xl">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-7xl mb-10">
 
         {/* Card Template */}
         {[

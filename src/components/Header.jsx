@@ -30,11 +30,11 @@ function Header() {
 
           {/* Desktop Menu */}
           <div className="hidden md:flex gap-6 text-base menu">
-            <a href="#feature" onClick={(e) => handleClick(e, 'feature')} className="hover:text-blue-600 transition-colors">คุณสมบัติ</a>
+            {/* <a href="#feature" onClick={(e) => handleClick(e, 'feature')} className="hover:text-blue-600 transition-colors">คุณสมบัติ</a> */}
             <a href="#solution" onClick={(e) => handleClick(e, 'solution')} className="hover:text-blue-600 transition-colors">แนะนำการใช้งาน</a>
             <a href="#forwho" onClick={(e) => handleClick(e, 'forwho')} className="hover:text-blue-600 transition-colors">เหมาะกับใคร</a>
             <a href="#faq" onClick={(e) => handleClick(e, 'faq')} className="hover:text-blue-600 transition-colors">คำถามที่พบบ่อย</a>
-            <a href="#about" onClick={(e) => handleClick(e, 'about')} className="hover:text-blue-600 transition-colors">เกี่ยวกับเรา</a>
+            <a href="#about" onClick={(e) => handleClick(e, 'about')} className="hover:text-blue-600 transition-colors">ติดต่อเรา</a>
           </div>
 
           {/* Mobile Hamburger Menu */}
@@ -57,12 +57,12 @@ function Header() {
         {isMenuOpen && (
           <div className="md:hidden mt-4 py-4 border-t border-gray-200 bg-white menu">
             <div className="flex flex-col space-y-3">
-              <a 
+              {/* <a 
                 href="#feature" onClick={(e) => handleClick(e, 'feature')} 
                 className="px-4 py-2 text-base hover:bg-gray-50 hover:text-blue-600 transition-colors rounded-md"
               >
                 คุณสมบัติ
-              </a>
+              </a> */}
               <a 
                 href="#solution" onClick={(e) => handleClick(e, 'solution')} 
                 className="px-4 py-2 text-base hover:bg-gray-50 hover:text-blue-600 transition-colors rounded-md"
@@ -85,7 +85,7 @@ function Header() {
                 href="#about" onClick={(e) => handleClick(e, 'about')} 
                 className="px-4 py-2 text-base hover:bg-gray-50 hover:text-blue-600 transition-colors rounded-md"
               >
-                เกี่ยวกับเรา
+                ติดต่อเรา
               </a>
             </div>
           </div>
