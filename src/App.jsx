@@ -5,8 +5,8 @@ import Hero from './components/Hero'
 import FeatureCard from './components/FeatureCard'
 import Solution from './components/Solution'
 import Forwho from './components/Forwho'
-import VideoSection from './components/VideoSection'
 import FAQSection from './components/FAQSection'
+import Feedback from './components/Feedback'
 import Footer from './components/Footer'
 
 function App() {
@@ -26,11 +26,9 @@ function App() {
       <div className="bg-white w-full h-4 lg:h-5"></div>
       <Forwho />
       <div className="bg-white w-full h-4 lg:h-5"></div>
-  
-          
-
-      {/* <VideoSection id="ff"/> */}
       <FAQSection/>
+      <div className="bg-white w-full h-4 lg:h-5"></div>
+      <Feedback />
       <Footer />
     </div>
   )

@@ -10,11 +10,11 @@ function Hero() {
     md:py-12 
     lg:py-16
     h-140  
-    lg:h-140
+    lg:h-130
     xl:h-160
     ">
       
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-20 items-center max-w-7xl mx-auto">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-20 items-center max-w-7xl mx-auto lg:mt-4">
 
         {/* Text Content */}
         <div className="flex flex-col justify-center items-center lg:items-start lg:ml-20 text-center lg:text-left pt-20 lg:pt-0">
