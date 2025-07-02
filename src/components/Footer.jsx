@@ -14,21 +14,21 @@ function Footer() {
             <p className="text-white text-base mb-6 leading-relaxed">
               แอปจัดการเงินสดที่ช่วยให้คุณควบคุมการเงินได้อย่างง่ายดายและปลอดภัย พร้อมฟีเจอร์บันทึกธุรกรรมของคุณได้ทั้งแบบเดี่ยว และแบบกลุ่ม
             </p>
-            {/* <div className="flex space-x-4">
-              <a href="#" className="w-10 h-10 bg-blue-100 hover:bg-blue-200 rounded-full flex items-center justify-center transition-colors">
-                <Facebook className="w-5 h-5 text-blue-600" />
-              </a>
-              <a href="#" className="w-10 h-10 bg-blue-100 hover:bg-blue-200 rounded-full flex items-center justify-center transition-colors">
-                <Twitter className="w-5 h-5 text-blue-600" />
-              </a>
-              <a href="#" className="w-10 h-10 bg-blue-100 hover:bg-blue-200 rounded-full flex items-center justify-center transition-colors">
-                <Instagram className="w-5 h-5 text-blue-600" />
-              </a>
-            </div> */}
           </div>
           
-          {/* Quick Links */}
+          {/* version */}
           <div>
+            <h4 className="text-lg font-semibold text-blue-500 mb-4 ml-2">เวอร์ชัน</h4>
+
+            <div className="space-y-4">
+              <p className="flex items-center gap-3 text-white text-base ml-2">
+                v0.1.0
+              </p>
+            </div>
+          </div>
+
+          {/* Quick Links */}
+          {/* <div>
             <h4 className="text-lg font-semibold text-blue-500 mb-5 ml-2 xl:ml-5">ลิงก์ด่วน</h4>
             <div className="space-y-4 ml-2 xl:ml-5">
               {['การสนับสนุน', 'นโยบายความเป็นส่วนตัว', 'เงื่อนไขการใช้งาน'].map((link) => (
@@ -37,7 +37,7 @@ function Footer() {
                 </a>
               ))}
             </div>
-          </div>
+          </div> */}
           
           {/* Contact Info */}
           <div>
