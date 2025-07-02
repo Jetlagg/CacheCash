@@ -32,7 +32,7 @@ function FeatureCard(){
     <section id="feature" className="lg:h-155">
       <div className="container mx-auto px-6 pt-20 pb-30">
         <div className="text-center">
-          <p className="text-blue-700 text-sm lg:text-lg font-bold  lg:font-semibold mb-2 lg:mb-4">คุณสมบัติ</p>
+          <p className="text-blue-700 text-sm lg:text-lg font-bold  lg:font-semibold mb-2 lg:mb-4">Features</p>
           <h2 className="text-2xl lg:text-3xl font-semibold text-gray-900 mb-2 lg:mb-4">
             ทำไมถึงต้องใช้ CacheCash
           </h2>

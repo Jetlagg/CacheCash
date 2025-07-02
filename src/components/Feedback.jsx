@@ -2,7 +2,7 @@ import Commentbutton from './Commentbutton';
 
 function Feedback() {
   return (
-    <section className="flex justify-center items-center bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 w-full h-135 lg:h-145 xl:h-155">
+    <section className="flex justify-center items-center bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 w-full h-135 lg:h-150 xl:h-155">
         <div className="flex flex-col justify-center items-center">
             <p className="text-blue-700 text-sm lg:text-lg font-bold  lg:font-semibold mb-2 lg:mb-2 mt-10">Feedback</p>
             <h2 className="text-2xl lg:text-3xl font-semibold text-gray-900 mb-4">

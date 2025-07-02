@@ -13,7 +13,7 @@ function Hero() {
     xl:h-170
     ">
       
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center mt-5 lg:mt-20">
+      <div className="grid grid-cols-1 lg:grid-cols-2 items-center mt-2 lg:mt-20">
 
         {/* Text Content */}
         <div className="flex flex-col justify-center items-center lg:items-start lg:ml-15 xl:ml-40 text-center lg:text-left pt-20 lg:pt-0">
@@ -36,10 +36,10 @@ function Hero() {
 
         {/* App Image */}
         <div className="flex justify-center lg:justify-end">
-          <div className="bg-[url('/appweb.webp')] bg-cover bg-center 
+          <div className="bg-[url('/appweb.webp')] bg-cover bg-center  
                           h-60 w-120 
                           lg:h-85 lg:w-120
-                          xl:h-125 xl:w-175
+                          xl:h-125 xl:w-190
                           ">
           </div>
         </div>

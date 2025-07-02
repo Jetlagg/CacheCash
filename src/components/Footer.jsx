@@ -29,7 +29,7 @@ function Footer() {
           
           {/* Quick Links */}
           <div>
-            <h4 className="text-lg font-semibold text-white mb-5 ml-2 xl:ml-5">ลิงก์ด่วน</h4>
+            <h4 className="text-lg font-semibold text-blue-500 mb-5 ml-2 xl:ml-5">ลิงก์ด่วน</h4>
             <div className="space-y-4 ml-2 xl:ml-5">
               {['การสนับสนุน', 'นโยบายความเป็นส่วนตัว', 'เงื่อนไขการใช้งาน'].map((link) => (
                 <a key={link} href="#" className="block text-white text-base font-semibold hover:text-blue-600 transition-colors">
@@ -41,7 +41,7 @@ function Footer() {
           
           {/* Contact Info */}
           <div>
-            <h4 className="text-lg font-semibold text-white mb-4 ml-2">ติดต่อเรา</h4>
+            <h4 className="text-lg font-semibold text-blue-500 mb-4 ml-2">ติดต่อเรา</h4>
             <div className="space-y-4">
               < Iconapp/>
               
@@ -59,7 +59,7 @@ function Footer() {
         
         {/* Copyright */}
         <div className="border-t border-gray-200 mt-12 pt-8 text-center h-2">
-          <p className="text-white text-base">
+          <p className="text-white text-sm lg:text-base font-medium">
             © 2025 CacheCash. ALL RIGHTS RESERVED.
           </p>
         </div>
