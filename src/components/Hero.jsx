@@ -16,7 +16,7 @@ function Hero() {
       <div className="grid grid-cols-1 lg:grid-cols-2 items-center mt-2 lg:mt-20">
 
         {/* Text Content */}
-        <div className="flex flex-col justify-center items-center lg:items-start lg:ml-15 xl:ml-40 text-center lg:text-left pt-20 lg:pt-0">
+        <div className="flex flex-col justify-center items-center lg:items-start lg:ml-15 xl:ml-40 text-center lg:text-left pt-23 lg:pt-0">
           <h2 className="text-3xl sm:text-4xl lg:text-4xl font-semibold mb-1 xl:mb-2">
             ควบคุมการเงินคุณในมือ
           </h2>
@@ -29,7 +29,7 @@ function Hero() {
           <p className="mb-4 xl:mb-6 text-sm sm:text-lg text-gray-500">
             CacheCash ช่วยให้เงินทุกบาทมีที่มาที่ไป
           </p>
-          <a href="#" className="inline-block">
+          <a href="#" className="inline-block mb-6 lg:mb-0">
             <Explorebutton />
           </a>
         </div>
