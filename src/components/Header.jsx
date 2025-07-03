@@ -46,6 +46,7 @@ function Header() {
             <a href="#forwho" onClick={(e) => handleClick(e, 'forwho')} className="lg:text-base lg:text-gray-800 hover:text-blue-600 transition-colors">เหมาะกับใคร</a>
             <a href="#faq" onClick={(e) => handleClick(e, 'faq')} className="lg:text-base lg:text-gray-800 hover:text-blue-600 transition-colors">คำถามที่พบบ่อย</a>
             <a href="#about" onClick={(e) => handleClick(e, 'about')} className="lg:text-base lg:text-gray-800 hover:text-blue-600 transition-colors">ติดต่อเรา</a>
+            <a href="#feedback" onClick={(e) => handleClick(e, 'feedback')} className="lg:text-base lg:text-gray-800 hover:text-blue-600 transition-colors">Feedback</a>
           </div>
 
           {/* Mobile Hamburger Menu */}
@@ -77,6 +78,7 @@ function Header() {
               <a href="#forwho" onClick={(e) => handleClick(e, 'forwho')} className="py-2 hover:text-blue-600">เหมาะกับใคร</a>
               <a href="#faq" onClick={(e) => handleClick(e, 'faq')} className="py-2 hover:text-blue-600">คำถามที่พบบ่อย</a>
               <a href="#about" onClick={(e) => handleClick(e, 'about')} className="py-2 hover:text-blue-600">ติดต่อเรา</a>
+              <a href="#feedback" onClick={(e) => handleClick(e, 'feedback')} className="py-2 hover:text-blue-600">Feedback</a>
             </div>
           </div>
         )}

@@ -2,7 +2,7 @@ import Commentbutton from './Commentbutton';
 
 function Feedback() {
   return (
-    <section className="flex justify-center items-center bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 w-full h-135 md:h-150 lg:h-150 xl:h-155">
+    <section id="feedback" className="flex justify-center items-center bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 w-full h-135 md:h-150 lg:h-150 xl:h-155">
         <div className="flex flex-col justify-center items-center">
             <p className="text-blue-700 text-sm md:text-lg font-bold  lg:font-semibold mb-2 lg:mb-2 mt-10">Feedback</p>
             <h2 className="text-2xl md:text-3xl font-semibold text-gray-900 mb-4">
@@ -22,7 +22,7 @@ function Feedback() {
                 เรากำลังพัฒนา CacheCash ให้ตอบโจทย์ทุกคนมากขึ้น ถ้าคุณมีฟีดแบคหรือไอเดียดี ๆ บอกเราได้เลย!
             </p>
 
-            <a href="#" className="mb-7">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeS17KrApNUoi7hd0UIa__haeqhXr2UolqxSNPc9L3SW1n29Q/viewform" className="mb-7">
                 <Commentbutton />
             </a>
             <div className="flex justify-center space-x-4 opacity-30 mb-20 lg:mb-25">
