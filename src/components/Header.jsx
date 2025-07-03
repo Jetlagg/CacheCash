@@ -27,7 +27,7 @@ function Header() {
 
   return (
     <header 
-    className="flex justify-between items-center p-4 md:p-6 fixed top-0 left-0 w-full z-50 bg-white shadow transition-all duration-300"
+    className="flex justify-between items-center p-4 md:p-5 lg:p-6 fixed top-0 left-0 w-full z-50 bg-white shadow transition-all duration-300"
     >
       <nav className="w-full">
         <div className="nav-wrapper flex justify-between items-center">
@@ -40,7 +40,7 @@ function Header() {
           </a>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex gap-6 text-base menu lg:mr-1 xl:mr-3">
+          <div className="hidden lg:flex gap-6 md:text-base menu lg:mr-1 xl:mr-3">
             {/* <a href="#feature" onClick={(e) => handleClick(e, 'feature')} className="hover:text-blue-600 transition-colors">คุณสมบัติ</a> */}
             <a href="#solution" onClick={(e) => handleClick(e, 'solution')} className="lg:text-base lg:text-gray-800 hover:text-blue-600 transition-colors">แนะนำการใช้งาน</a>
             <a href="#forwho" onClick={(e) => handleClick(e, 'forwho')} className="lg:text-base lg:text-gray-800 hover:text-blue-600 transition-colors">เหมาะกับใคร</a>
@@ -49,7 +49,7 @@ function Header() {
           </div>
 
           {/* Mobile Hamburger Menu */}
-          <div className="hamberger md:hidden">
+          <div className="hamberger lg:hidden">
             <button 
               onClick={toggleMenu}
               className="p-2 "

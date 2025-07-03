@@ -1,9 +1,9 @@
 function Solution() {
   return (
-    <section id="solution" className="flex flex-col justify-center items-center bg-gray-50 h-460 lg:h-375 xl:h-470">
+    <section id="solution" className="flex flex-col justify-center items-center bg-gray-50 h-460 md:h-530 lg:h-375 xl:h-470">
         
-        <div className="text-center mb-10 lg:mb-20 lg:mt-20 xl:mb-25 px-4 max-w-3xl mx-auto">
-            <p className="text-blue-700 text-sm font-bold mb-2 lg:text-lg lg:font-semibold">How to use</p>
+        <div className="text-center mb-10 md:mb-15 lg:mb-20 lg:mt-20 xl:mb-25 px-4 max-w-3xl mx-auto">
+            <p className="text-blue-700 text-sm font-bold mb-2 md:text-lg lg:text-lg lg:font-semibold">How to use</p>
             <h2 className="text-2xl md:text-3xl lg:text-3xl font-semibold text-gray-900">
                 ขั้นตอนการใช้งานแอป
             </h2>
@@ -37,24 +37,27 @@ function Solution() {
                         </p>
                     </div>
                     <div className="flex flex-col justify-center items-center">
-                        <div className="bg-[url('/uploadbill.webp')] bg-cover bg-center h-[350px] w-50 rounded-4xl shadow-lg"></div>
+                        <div className="bg-[url('/uploadbill.webp')] bg-cover bg-center h-[350px] w-50"></div>
                     </div>
                 </div>
 
                 {/* Tablet Layout */}
-                <div className="hidden md:block lg:hidden">
+                <div className="hidden md:block lg:hidden border-t border-gray-300">
                     <div className="grid grid-cols-1 gap-8 items-center">
-                        <div className="text-center">
+                        <div className="text-center  mt-10">
                             <p className="text-blue-500 font-semibold text-lg mb-2">Upload</p>
-                            <h3 className="text-2xl font-bold text-gray-900 leading-tight mb-4">
+                            <h3 className="text-2xl font-semibold text-gray-900 leading-tight mb-4">
                                 สแกนบิลให้เลย เพียงแค่อัปโหลดรูปภาพ
                             </h3>
-                            <p className="text-gray-500 text-sm text-center leading-relaxed">
-                                อัปโหลดหรือถ่ายรูปบิล ระบบอ่านชื่อร้าน, วันที่, VAT และยอดรวมให้ทันที ไม่ต้องเสียเวลานั่งพิมพ์ยอด ไม่ต้องกลัวกรอกผิด ระบบ OCR อ่านให้ครบทุกช่องสำคัญ
+                            <p className="text-gray-500 text-base text-center leading-relaxed">
+                                อัปโหลดหรือถ่ายรูปบิล ระบบอ่านชื่อร้าน, วันที่, VAT และยอดรวมให้ทันที 
+                            </p>
+                            <p className="text-gray-500 text-base text-center leading-relaxed">
+                                ไม่ต้องเสียเวลานั่งพิมพ์ยอด ไม่ต้องกลัวกรอกผิด ระบบ OCR อ่านให้ครบทุกช่องสำคัญ 
                             </p>
                         </div>
                         <div className="flex justify-center">
-                            <div className="bg-[url('/uploadbill.webp')] bg-cover bg-center h-[400px] w-[280px] rounded-4xl shadow-lg"></div>
+                            <div className="bg-[url('/uploadbill.webp')] bg-cover bg-center h-[430px] w-[260px]"></div>
                         </div>
                     </div>
                 </div>
@@ -62,7 +65,7 @@ function Solution() {
                 {/* ipad Layout */}
                 <div className="hidden lg:grid xl:hidden ">
                     <div className="flex flex-row justify-center gap-40">
-                        <div className="bg-[url('/uploadbill.webp')] bg-cover bg-center h-[350px] lg:h-[400px] w-80 ml-15 rounded-4xl shadow-lg"></div>
+                        <div className="bg-[url('/uploadbill.webp')] bg-cover bg-center h-[350px] lg:h-[400px] w-80 ml-15"></div>
                         
                         <div className="space-y-4">
                             <p className="text-blue-500 font-semibold text-m">Upload</p>
@@ -78,7 +81,7 @@ function Solution() {
 
                 {/* Desktop */}
                 <div className="hidden xl:grid xl:grid-cols-2 xl:gap-20">
-                    <div className="bg-[url('/uploadbill.webp')] bg-cover bg-center h-[550px] w-100 rounded-4xl shadow-xl ml-25"></div>
+                    <div className="bg-[url('/uploadbill.webp')] bg-cover bg-center h-[550px] w-100 ml-25"></div>
                     
                     <div className="space-y-6">
                         <p className="text-blue-500 font-semibold text-lg">Upload</p>
@@ -121,17 +124,17 @@ function Solution() {
                 {/* Tablet Layout */}
                 <div className="hidden md:block lg:hidden">
                     <div className="grid grid-cols-1 gap-8 items-center py-12">
-                        <div className="text-center">
+                        <div className="text-center mb-2">
                             <p className="text-blue-500 font-semibold text-lg mb-2">Check the budget</p>
-                            <h3 className="text-2xl font-bold text-gray-900 leading-tight mb-4">
+                            <h3 className="text-2xl font-semibold text-gray-900 leading-tight mb-4">
                                 รู้ว่างบเหลือเท่าไหร่
                             </h3>
-                            <p className="text-gray-600 text-lg leading-relaxed max-w-lg mx-auto">
+                            <p className="text-gray-600 text-base leading-relaxed max-w-lg mx-auto">
                                 ดูงบคงเหลือ แยกตามโปรเจกต์ / หมวดหมู่ / ผู้ใช้ ได้ทันที ไม่ต้องนั่งลบเองใน Excel ไม่ต้องถามว่า "งบพอไหม?" Dashboard บอกให้ทันที"
                             </p>
                         </div>
                         <div className="flex justify-center">
-                            <div className="bg-[url('/dashboard.webp')] bg-cover bg-center h-[300px] w-full max-w-150 rounded-4xl shadow-lg"></div>
+                            <div className="bg-[url('/dashboard.webp')] bg-cover bg-center h-[300px] w-full max-w-150 rounded-4xl shadow-lg mb-5"></div>
                         </div>
                     </div>
                 </div>
@@ -203,10 +206,10 @@ function Solution() {
                     <div className="grid grid-cols-1 gap-8 items-center">
                         <div className="text-center">
                             <p className="text-blue-500 font-semibold text-lg mb-2">Export</p>
-                            <h3 className="text-2xl font-bold text-gray-900 leading-tight mb-4">
+                            <h3 className="text-2xl font-semibold text-gray-900 leading-tight mb-4">
                                 Export PDF/Excel ส่งฝ่ายบัญชีได้ทันที
                             </h3>
-                            <p className="text-gray-600 text-lg leading-relaxed max-w-lg mx-auto">
+                            <p className="text-gray-600 text-base leading-relaxed max-w-lg mx-auto">
                                 เลือกได้ทั้ง PDF สำหรับ Sponsor หรือ Excel สำหรับฝ่ายบัญ ครบทั้งยอด, รายการ, และไฟล์บิลแนบทุกใบ ไม่ต้องนั่งเรียงไฟล์ ไม่ต้องรวมยอดเอง CacheCash Export ให้ทุกอย่างเรียบร้อย
                             </p>
                         </div>

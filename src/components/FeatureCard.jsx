@@ -32,14 +32,14 @@ function FeatureCard(){
     <section id="feature" className="lg:h-155">
       <div className="container mx-auto px-6 pt-20 pb-30">
         <div className="text-center">
-          <p className="text-blue-700 text-sm lg:text-lg font-bold  lg:font-semibold mb-2 lg:mb-4">Features</p>
-          <h2 className="text-2xl lg:text-3xl font-semibold text-gray-900 mb-2 lg:mb-4">
+          <p className="text-blue-700 text-sm md:text-lg lg:text-lg font-bold  lg:font-semibold mb-2 lg:mb-4">Features</p>
+          <h2 className="text-2xl md:text-3xl lg:text-3xl font-semibold text-gray-900 mb-2 lg:mb-4">
             ทำไมถึงต้องใช้ CacheCash
           </h2>
 
           {/* Mobile */}
-          <p className="block md:hidden text-sm  text-gray-600">เพราะการจัดการเงิน ไม่ควรเป็นเรื่องยุ่งยากอีกต่อไป</p>
-          <p className="block md:hidden text-sm  text-gray-600 mb-15">นี่คือฟีเจอร์หลักๆของเรา</p>
+          <p className="block lg:hidden text-sm md:text-lg text-gray-600">เพราะการจัดการเงิน ไม่ควรเป็นเรื่องยุ่งยากอีกต่อไป</p>
+          <p className="block lg:hidden text-sm md:text-lg text-gray-600 mb-15">นี่คือฟีเจอร์หลักๆของเรา</p>
 
           {/* Ipad Dasktop */}
           <p className="hidden lg:flex justify-center items-center text-sm lg:text-lg lg:font-normal text-gray-600 mb-20">เพราะการจัดการเงิน ไม่ควรเป็นเรื่องยุ่งยากอีกต่อไป นี่คือฟีเจอร์หลักๆของเรา</p>
@@ -55,7 +55,7 @@ function FeatureCard(){
                 transition duration-300 ease-in-out transform
                 hover:-translate-y-1 hover:shadow-lg
                 active:-translate-y-0.5
-                ${index === 2 ? 'md:col-span-2 md:mx-auto lg:col-span-1 lg:mx-0' : ''}
+                ${index === 2 ? 'lg:col-span-1 lg:mx-0' : ''}
             `}
             >
               <div className="mb-4">

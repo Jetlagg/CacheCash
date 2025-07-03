@@ -9,6 +9,7 @@ function Hero() {
     px-4 py-8
     md:py-12 
     h-150  
+    md:h-175
     lg:h-130
     xl:h-170
     ">
@@ -38,6 +39,7 @@ function Hero() {
         <div className="flex justify-center lg:justify-end">
           <div className="bg-[url('/appweb.webp')] bg-cover bg-center  
                           h-60 w-120 
+                          md:h-80
                           lg:h-85 lg:w-120
                           xl:h-125 xl:w-190
                           ">

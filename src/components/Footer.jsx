@@ -5,7 +5,7 @@ function Footer() {
   return (
     <footer id="about" className="py-16 bg-gray-800 border-t border-gray-200">
       <div className="container mx-auto px-6 lg:px-15 xl:px-0">
-        <div className="grid md:grid-cols-4 gap-12">
+        <div className="grid md:grid-cols-4 gap-12 md:gap-0 lg:gap-12">
           {/* Company Info */}
           <div className="md:col-span-2 ml-2">
             <div className="text-3xl font-bold text-blue-500 mb-4">
@@ -40,7 +40,7 @@ function Footer() {
           </div> */}
           
           {/* Contact Info */}
-          <div>
+          <div className="">
             <h4 className="text-lg font-semibold text-blue-500 mb-4 ml-2">ติดต่อเรา</h4>
             <div className="space-y-4">
               < Iconapp/>
